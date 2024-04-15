@@ -1,0 +1,79 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  /*div contenedro*/
+  .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  /*deshabilita el div contenedor*/
+  .contenedor-deshabilitado {
+      pointer-events: none; /* Deshabilita eventos de puntero (click, etc.) */
+      opacity: 0.7; /* Reduce la opacidad para indicar deshabilitación visualmente */
+  }
+  
+  .fila {
+    display: flex;
+    width: 100%;
+  }
+  
+  .casilla {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    /*text-align: center;*/
+    font-size: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /*.casilla:hover {
+      background-color: #eee;
+  }*/
+  @import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+  
+  .jugador1 {
+    background-color: #f00;
+  
+  }
+  
+  .jugador2 {
+    background-color: #00f;
+  }
+  
+  #mensaje-ganador {
+      display: none; /* Ocultar el mensaje inicialmente */
+      text-align: center;
+      margin-top: 20px; /* Espacio entre el tablero y el mensaje */
+      font-weight: bold;
+      font-size: 18px;
+  }
+  
+  #boton-reiniciar {
+      display: none; /* Ocultar el botón inicialmente */
+      margin-top: 20px; /* Espacio entre el mensaje y el botón */
+      padding: 10px 20px;
+      background-color: #4CAF50; /* Verde */
+      color: white;
+      border: none;
+      cursor: pointer;
+  
+  }
+  
+  #boton-reiniciar:hover {
+      background-color: #45a049; /* Verde más oscuro */
+  }
+  
+  .contBoton{
+    display: flex;
+    justify-content: center;
+  }
+  
+  
